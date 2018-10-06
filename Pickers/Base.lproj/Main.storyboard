@@ -16,10 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="Emw-iS-Ckf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTe-4h-OiJ">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pTF-9A-miY" id="p4g-HX-cIB"/>
+                                    <outlet property="delegate" destination="pTF-9A-miY" id="k30-Kg-ElZ"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K2-L3-sDQ">
+                                <rect key="frame" x="165.5" y="224" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="pTF-9A-miY" eventType="touchUpInside" id="YOr-Ub-BwB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xTe-4h-OiJ" firstAttribute="top" secondItem="Emw-iS-Ckf" secondAttribute="top" id="YeQ-Fa-9vk"/>
+                            <constraint firstItem="5K2-L3-sDQ" firstAttribute="top" secondItem="xTe-4h-OiJ" secondAttribute="bottom" constant="8" id="h01-aV-Ig0"/>
+                            <constraint firstItem="xTe-4h-OiJ" firstAttribute="centerX" secondItem="Emw-iS-Ckf" secondAttribute="centerX" id="tHM-At-Gq1"/>
+                            <constraint firstItem="5K2-L3-sDQ" firstAttribute="centerX" secondItem="Emw-iS-Ckf" secondAttribute="centerX" id="wUE-BP-kxQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WAY-Ur-Rkg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="GeX-CB-Xtw"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="xTe-4h-OiJ" id="zAr-IU-oPt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kG-GA-FSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,10 +105,40 @@
                     <view key="view" contentMode="scaleToFill" id="prQ-gB-eJg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-lu-mBA">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="560551649.41080797">
+                                    <!--2018-10-06 20:47:29 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="6311300400">
+                                    <!--2200-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogx-3m-Tfp">
+                                <rect key="frame" x="165.5" y="258" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="XGb-xD-3b8" eventType="touchUpInside" id="6WW-ox-Kn9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PAT-lu-mBA" firstAttribute="centerX" secondItem="prQ-gB-eJg" secondAttribute="centerX" id="5Vq-Ao-2sI"/>
+                            <constraint firstItem="ogx-3m-Tfp" firstAttribute="top" secondItem="PAT-lu-mBA" secondAttribute="bottom" constant="42" id="Osx-Dx-OpK"/>
+                            <constraint firstItem="PAT-lu-mBA" firstAttribute="top" secondItem="prQ-gB-eJg" secondAttribute="top" id="dXs-y9-ee4"/>
+                            <constraint firstItem="ogx-3m-Tfp" firstAttribute="centerX" secondItem="prQ-gB-eJg" secondAttribute="centerX" id="usI-Fo-Y72"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="az6-x5-LvS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="Ihx-wl-qqE"/>
+                    <connections>
+                        <outlet property="datePicker" destination="PAT-lu-mBA" id="k92-r0-c0A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRQ-vy-UPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
