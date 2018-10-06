@@ -17,6 +17,7 @@
 		032494EC2169524C0072AFEF /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032494EB2169524C0072AFEF /* DoubleComponentPickerViewController.swift */; };
 		032494EE216952600072AFEF /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032494ED216952600072AFEF /* DependentComponentPickerViewController.swift */; };
 		032494F0216952700072AFEF /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032494EF216952700072AFEF /* CustomPickerViewController.swift */; };
+		03FE0BFE216970D7008ABEDE /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03FE0BFD216970D7008ABEDE /* statedictionary.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		032494EB2169524C0072AFEF /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		032494ED216952600072AFEF /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		032494EF216952700072AFEF /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		03FE0BFD216970D7008ABEDE /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		032494D4216951A10072AFEF /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				03FE0BFD216970D7008ABEDE /* statedictionary.plist */,
 				032494D5216951A10072AFEF /* AppDelegate.swift */,
 				032494D7216951A10072AFEF /* ViewController.swift */,
 				032494D9216951A10072AFEF /* Main.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				032494E0216951A20072AFEF /* LaunchScreen.storyboard in Resources */,
 				032494DD216951A20072AFEF /* Assets.xcassets in Resources */,
+				03FE0BFE216970D7008ABEDE /* statedictionary.plist in Resources */,
 				032494DB216951A10072AFEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

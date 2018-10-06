@@ -57,10 +57,35 @@
                     <view key="view" contentMode="scaleToFill" id="Enk-ms-OAy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEf-8u-XmI">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bmQ-qT-Xxg" id="xN2-j1-yCM"/>
+                                    <outlet property="delegate" destination="bmQ-qT-Xxg" id="NDN-D7-l69"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB1-EB-1PY">
+                                <rect key="frame" x="165.5" y="259" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="bmQ-qT-Xxg" eventType="touchUpInside" id="5Hp-L6-Qbd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fB1-EB-1PY" firstAttribute="centerX" secondItem="Enk-ms-OAy" secondAttribute="centerX" id="Min-7O-fRh"/>
+                            <constraint firstItem="ZEf-8u-XmI" firstAttribute="centerX" secondItem="Enk-ms-OAy" secondAttribute="centerX" id="dgk-a3-P3u"/>
+                            <constraint firstItem="fB1-EB-1PY" firstAttribute="top" secondItem="ZEf-8u-XmI" secondAttribute="bottom" constant="43" id="epJ-3N-SG5"/>
+                            <constraint firstItem="ZEf-8u-XmI" firstAttribute="top" secondItem="Enk-ms-OAy" secondAttribute="top" id="zYI-fs-ldN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="stz-oh-dQI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="W1x-Vu-bvb"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="ZEf-8u-XmI" id="vHG-nc-Kdp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjr-VU-cpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,10 +98,35 @@
                     <view key="view" contentMode="scaleToFill" id="HBh-uR-LXG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0e-Wi-dpe">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="GJL-vm-uSp" id="xsa-Ba-UzO"/>
+                                    <outlet property="delegate" destination="GJL-vm-uSp" id="QPB-vj-dxn"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4N-bO-OZR">
+                                <rect key="frame" x="165.5" y="296" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="GJL-vm-uSp" eventType="touchUpInside" id="ZYe-W4-LN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O0e-Wi-dpe" firstAttribute="top" secondItem="HBh-uR-LXG" secondAttribute="top" id="ISg-hC-WKJ"/>
+                            <constraint firstItem="O0e-Wi-dpe" firstAttribute="centerX" secondItem="HBh-uR-LXG" secondAttribute="centerX" id="Rix-6m-Yy3"/>
+                            <constraint firstItem="k4N-bO-OZR" firstAttribute="top" secondItem="O0e-Wi-dpe" secondAttribute="bottom" constant="80" id="UHg-aD-EVM"/>
+                            <constraint firstItem="k4N-bO-OZR" firstAttribute="centerX" secondItem="HBh-uR-LXG" secondAttribute="centerX" id="oN5-Es-V4X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="61H-Es-Byx"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="h50-rW-t8h"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="O0e-Wi-dpe" id="mra-nV-Bgm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDZ-WR-pQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
