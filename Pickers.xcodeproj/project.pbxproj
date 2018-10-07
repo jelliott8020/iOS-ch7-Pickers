@@ -18,6 +18,8 @@
 		032494EE216952600072AFEF /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032494ED216952600072AFEF /* DependentComponentPickerViewController.swift */; };
 		032494F0216952700072AFEF /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032494EF216952700072AFEF /* CustomPickerViewController.swift */; };
 		03FE0BFE216970D7008ABEDE /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03FE0BFD216970D7008ABEDE /* statedictionary.plist */; };
+		03FE0C0121697D94008ABEDE /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03FE0BFF21697D94008ABEDE /* crunch.wav */; };
+		03FE0C0221697D94008ABEDE /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03FE0C0021697D94008ABEDE /* win.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		032494ED216952600072AFEF /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		032494EF216952700072AFEF /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 		03FE0BFD216970D7008ABEDE /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
+		03FE0BFF21697D94008ABEDE /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crunch.wav; path = "../../../Swift Source Code/07_AllSource/07 - Picker Sounds/crunch.wav"; sourceTree = "<group>"; };
+		03FE0C0021697D94008ABEDE /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = "../../../Swift Source Code/07_AllSource/07 - Picker Sounds/win.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		032494D4216951A10072AFEF /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				03FE0BFF21697D94008ABEDE /* crunch.wav */,
+				03FE0C0021697D94008ABEDE /* win.wav */,
 				03FE0BFD216970D7008ABEDE /* statedictionary.plist */,
 				032494D5216951A10072AFEF /* AppDelegate.swift */,
 				032494D7216951A10072AFEF /* ViewController.swift */,
@@ -140,8 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FE0C0121697D94008ABEDE /* crunch.wav in Resources */,
 				032494E0216951A20072AFEF /* LaunchScreen.storyboard in Resources */,
 				032494DD216951A20072AFEF /* Assets.xcassets in Resources */,
+				03FE0C0221697D94008ABEDE /* win.wav in Resources */,
 				03FE0BFE216970D7008ABEDE /* statedictionary.plist in Resources */,
 				032494DB216951A10072AFEF /* Main.storyboard in Resources */,
 			);

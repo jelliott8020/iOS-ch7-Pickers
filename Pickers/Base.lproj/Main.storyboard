@@ -139,14 +139,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ktv-5P-vPw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-xf-NcX">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ifI-Sj-Mwp" id="SCA-mo-5pa"/>
+                                    <outlet property="delegate" destination="ifI-Sj-Mwp" id="ttg-6L-Zim"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxy-p4-Cyk">
+                                <rect key="frame" x="172" y="318" width="31" height="30"/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spin:" destination="ifI-Sj-Mwp" eventType="touchUpInside" id="g1O-27-kai"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KD-S9-oA8">
+                                <rect key="frame" x="187.5" y="224" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.79607843140000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0KD-S9-oA8" firstAttribute="top" secondItem="1ab-xf-NcX" secondAttribute="bottom" constant="8" id="4LZ-xL-ZZ2"/>
+                            <constraint firstItem="1ab-xf-NcX" firstAttribute="top" secondItem="Ktv-5P-vPw" secondAttribute="top" id="MkG-Gm-sWm"/>
+                            <constraint firstItem="0KD-S9-oA8" firstAttribute="top" secondItem="1ab-xf-NcX" secondAttribute="bottom" constant="8" id="ODw-ID-Z4R"/>
+                            <constraint firstItem="Nxy-p4-Cyk" firstAttribute="top" secondItem="1ab-xf-NcX" secondAttribute="bottom" constant="102" id="VNs-rg-yXi"/>
+                            <constraint firstItem="0KD-S9-oA8" firstAttribute="centerX" secondItem="Ktv-5P-vPw" secondAttribute="centerX" id="WvI-7o-BDe"/>
+                            <constraint firstItem="1ab-xf-NcX" firstAttribute="centerX" secondItem="Ktv-5P-vPw" secondAttribute="centerX" id="c3J-eP-H37"/>
+                            <constraint firstItem="Nxy-p4-Cyk" firstAttribute="centerX" secondItem="Ktv-5P-vPw" secondAttribute="centerX" id="eMZ-zg-1x0"/>
+                            <constraint firstItem="0KD-S9-oA8" firstAttribute="centerX" secondItem="Ktv-5P-vPw" secondAttribute="centerX" id="eWB-Ho-TBI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="e6S-zh-cJ2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="Oxf-hX-Uvq"/>
+                    <connections>
+                        <outlet property="button" destination="Nxy-p4-Cyk" id="ugh-Pq-ec2"/>
+                        <outlet property="picker" destination="1ab-xf-NcX" id="beg-Hf-ZT6"/>
+                        <outlet property="winLabel" destination="0KD-S9-oA8" id="IMp-ry-GhW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kz4-VL-cu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="197"/>
+            <point key="canvasLocation" x="717.60000000000002" y="196.55172413793105"/>
         </scene>
         <!--Date-->
         <scene sceneID="4gT-Pg-EGg">
